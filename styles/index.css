@@ -15,20 +15,35 @@ body {
 nav {
   padding: 1.3rem 2rem;
 }
-
 nav #menu-icon {
   font-size: 2rem;
   color: #272a31;
 }
-
 nav div {
   display: none;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#timeline h1 {
+  font-family: "COCOGOOSE", sans-serif;
+  color: #ec5242;
+  text-transform: uppercase;
+  margin: 0 1.5rem;
+  line-height: 1.8rem;
+}
+#timeline p {
+  margin: 1rem 1rem;
+}
+#timeline div {
+  padding: 0 1.2rem;
+}
+#timeline h2 {
+  font-family: "COCOGOOSE", sans-serif;
+  color: #272a31;
 }
 
 /*# sourceMappingURL=index.css.map */

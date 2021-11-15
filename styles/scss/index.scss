@@ -37,3 +37,26 @@ nav {
     list-style: none;
   }
 }
+
+#timeline {
+  h1 {
+    font-family: $secondary-font;
+    color: $secondary-color;
+    text-transform: uppercase;
+    margin: 0 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  p {
+    margin: 1rem 1rem;
+  }
+
+  div {
+    padding: 0 1.2rem;
+  }
+
+  h2 {
+    font-family: $secondary-font;
+    color: $primary-color;
+  }
+}
