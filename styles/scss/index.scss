@@ -1,0 +1,39 @@
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'COCOGOOSE', sans-serif;
+
+$primary-color: #272a31;
+$secondary-color: #ec5242;
+$alternative-color: #d3d3d3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+nav {
+  padding: 1.3rem 2rem;
+
+  #menu-icon {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+
+  div {
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

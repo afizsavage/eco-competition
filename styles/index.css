@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  padding: 1.3rem 2rem;
+}
+
+nav #menu-icon {
+  font-size: 2rem;
+  color: #272a31;
+}
+
+nav div {
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*# sourceMappingURL=index.css.map */
