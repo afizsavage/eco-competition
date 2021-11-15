@@ -28,6 +28,9 @@ nav ul {
   list-style: none;
 }
 
+#timeline {
+  padding: 4rem 0;
+}
 #timeline h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
@@ -37,6 +40,7 @@ nav ul {
 }
 #timeline p {
   margin: 1rem 1rem;
+  line-height: 1.7rem;
 }
 #timeline div {
   padding: 0 1.2rem;
@@ -44,6 +48,53 @@ nav ul {
 #timeline h2 {
   font-family: "COCOGOOSE", sans-serif;
   color: #272a31;
+}
+
+#main-program {
+  color: #fff;
+  padding: 3rem 0;
+  background: #272a31 url(../assets/program-bg.png) top left repeat;
+  display: flex;
+  flex-direction: column;
+}
+#main-program div {
+  height: 5rem;
+  display: flex;
+  padding: 0 2rem;
+}
+#main-program div i {
+  width: 5rem;
+}
+#main-program div h4 {
+  width: 15rem;
+  color: #ec5242;
+}
+#main-program h3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+  height: 2.7rem;
+}
+#main-program h3::after {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 10%;
+  bottom: 0;
+  background-color: #ec5242;
+  left: 45%;
+}
+#main-program #programs-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+#main-program button {
+  background-color: #ec5242;
+  height: 5rem;
+  width: 10rem;
+  align-self: center;
+  border: none;
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */
