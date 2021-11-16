@@ -10,6 +10,11 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background: #fff url(../../assets/imgcrop1.webp) top center no-repeat;
+}
+
+header {
+  background-color: #d3d3d3e3;
 }
 
 nav {
@@ -28,24 +33,26 @@ nav ul {
   list-style: none;
 }
 
-#timeline {
+.timeline {
   padding: 4rem 0;
+  height: 35rem;
+  background-color: rgba(255, 255, 255, 0.541);
 }
-#timeline h1 {
+.timeline h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
   text-transform: uppercase;
   margin: 0 1.5rem;
   line-height: 1.8rem;
 }
-#timeline p {
+.timeline p {
   margin: 1rem 1rem;
   line-height: 1.7rem;
 }
-#timeline div {
+.timeline div {
   padding: 0 1.2rem;
 }
-#timeline h2 {
+.timeline h2 {
   font-family: "COCOGOOSE", sans-serif;
   color: #272a31;
 }
@@ -55,6 +62,7 @@ h3 {
   text-align: center;
   margin-bottom: 2rem;
   height: 2.7rem;
+  font-size: 1.3rem;
 }
 
 h3::after {
@@ -78,17 +86,51 @@ section ul {
   display: flex;
   flex-direction: column;
 }
-#main-program div {
-  height: 5rem;
-  display: flex;
-  padding: 0 2rem;
+#main-program ul {
+  padding: 0 1.1rem;
 }
-#main-program div i {
-  width: 5rem;
+#main-program li {
+  background-color: #d3d3d31e;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+}
+#main-program li h4 {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+#main-program li p {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+#main-program div {
+  height: 4rem;
+  display: flex;
+  background: url(../../assets/forum.png) left center no-repeat;
+  background-size: 3rem;
+  padding-left: 1.5rem;
+  background-origin: content-box;
 }
 #main-program div h4 {
   width: 15rem;
   color: #ec5242;
+  margin-left: 5rem;
+}
+#main-program div#award {
+  background: url(../../assets/winner.png) left center no-repeat;
+  background-origin: content-box;
+  background-size: 3rem;
+}
+#main-program div#lecture {
+  background: url(../../assets/press-conference.png) left center no-repeat;
+  background-origin: content-box;
+  background-size: 3rem;
+}
+#main-program div#eat {
+  background: url(../../assets/eating.png) left center no-repeat;
+  background-origin: content-box;
+  background-size: 3rem;
 }
 #main-program #programs-icon {
   color: #fff;
@@ -96,11 +138,14 @@ section ul {
 }
 #main-program button {
   background-color: #ec5242;
-  height: 5rem;
-  width: 10rem;
+  height: 4.5rem;
+  width: 17rem;
   align-self: center;
   border: none;
   color: #fff;
+  margin-top: 2.4rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 #speakers {
@@ -113,7 +158,10 @@ section ul {
   background-size: 4.5rem 4.5rem;
   padding-left: 1.2rem;
   padding-top: 1.2rem;
-  margin-right: 1.2rem;
+  margin-right: 1.3rem;
+}
+#speakers .speaker-details {
+  padding-top: 0.5rem;
 }
 #speakers li {
   display: flex;

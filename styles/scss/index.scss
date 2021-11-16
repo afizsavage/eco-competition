@@ -17,6 +17,11 @@ $alternative-color: #d3d3d3;
 
 body {
   font-family: $primary-font;
+  background: #fff url(../../assets/imgcrop1.webp) top center no-repeat;
+}
+
+header {
+  background-color: #d3d3d3e3;
 }
 
 nav {
@@ -38,8 +43,10 @@ nav {
   }
 }
 
-#timeline {
+.timeline {
   padding: 4rem 0;
+  height: 35rem;
+  background-color: rgba(255, 255, 255, 0.541);
 
   h1 {
     font-family: $secondary-font;
@@ -69,6 +76,7 @@ h3 {
   text-align: center;
   margin-bottom: 2rem;
   height: 2.7rem;
+  font-size: 1.3rem;
 }
 
 h3::after {
@@ -92,19 +100,59 @@ section ul {
   display: flex;
   flex-direction: column;
 
-  div {
-    height: 5rem;
-    display: flex;
-    padding: 0 2rem;
+  ul {
+    padding: 0 1.1rem;
+  }
 
-    i {
-      width: 5rem;
+  li {
+    background-color: #d3d3d31e;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+
+    h4 {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
     }
+
+    p {
+      display: flex;
+      align-items: center;
+      padding-right: 0.5rem;
+    }
+  }
+
+  div {
+    height: 4rem;
+    display: flex;
+    background: url(../../assets/forum.png) left center no-repeat;
+    background-size: 3rem;
+    padding-left: 1.5rem;
+    background-origin: content-box;
 
     h4 {
       width: 15rem;
       color: $secondary-color;
+      margin-left: 5rem;
     }
+  }
+
+  div#award {
+    background: url(../../assets/winner.png) left center no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+
+  div#lecture {
+    background: url(../../assets/press-conference.png) left center no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+
+  div#eat {
+    background: url(../../assets/eating.png) left center no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
   }
 
   #programs-icon {
@@ -114,11 +162,14 @@ section ul {
 
   button {
     background-color: $secondary-color;
-    height: 5rem;
-    width: 10rem;
+    height: 4.5rem;
+    width: 17rem;
     align-self: center;
     border: none;
     color: #fff;
+    margin-top: 2.4rem;
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
 
@@ -132,7 +183,11 @@ section ul {
     background-size: 4.5rem 4.5rem;
     padding-left: 1.2rem;
     padding-top: 1.2rem;
-    margin-right: 1.2rem;
+    margin-right: 1.3rem;
+  }
+
+  .speaker-details {
+    padding-top: 0.5rem;
   }
 
   li {
