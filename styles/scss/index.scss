@@ -44,30 +44,44 @@ nav {
 }
 
 .timeline {
-  padding: 4rem 0;
-  height: 35rem;
-  background-color: rgba(255, 255, 255, 0.541);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 39rem;
+  // background-color: rgba(255, 255, 255, 0.541);
+  background-color: rgba(151, 150, 150, 0.226);
 
   h1 {
     font-family: $secondary-font;
     color: $secondary-color;
     text-transform: uppercase;
     margin: 0 1.5rem;
-    line-height: 1.8rem;
+    line-height: 2.6rem;
+    font-size: 2.3rem;
   }
 
   p {
     margin: 1rem 1rem;
+    margin-top: 1.8rem;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    border: #fff 4px solid;
     line-height: 1.7rem;
   }
 
   div {
     padding: 0 1.2rem;
+
+    span {
+      font-size: 1.1rem;
+      margin-top: 0.5;
+    }
   }
 
   h2 {
     font-family: $secondary-font;
     color: $primary-color;
+    font-size: 1.8rem;
   }
 }
 
@@ -75,7 +89,7 @@ h3 {
   position: relative;
   text-align: center;
   margin-bottom: 2rem;
-  height: 2.7rem;
+  height: auto;
   font-size: 1.3rem;
 }
 
@@ -84,13 +98,46 @@ h3::after {
   position: absolute;
   height: 0.1rem;
   width: 10%;
-  bottom: 0;
+  bottom: -1rem;
   background-color: $secondary-color;
   left: 45%;
 }
 
 section ul {
   list-style: none;
+}
+
+#about-timeline {
+  h1 {
+    text-align: center;
+    font-size: 2.1rem;
+  }
+
+  p {
+    background-color: #fff;
+    border: $alternative-color 1px solid;
+    text-align: center;
+  }
+
+  div {
+    span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+
+    p {
+      background-color: inherit;
+      border: none;
+      margin: 0;
+      padding-top: 0.6rem;
+      padding-bottom: 0.2rem;
+      font-size: 0.9rem;
+    }
+  }
 }
 
 #main-program {
@@ -102,6 +149,7 @@ section ul {
 
   ul {
     padding: 0 1.1rem;
+    margin-top: 1.5rem;
   }
 
   li {
@@ -113,7 +161,7 @@ section ul {
       display: flex;
       align-items: center;
       margin-right: 1rem;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 800;
     }
 
@@ -121,12 +169,12 @@ section ul {
       display: flex;
       align-items: center;
       padding-right: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 
   div {
-    height: 4rem;
+    height: auto;
     display: flex;
     background: url(../../assets/forum.png) left center no-repeat;
     background-size: 3rem;
@@ -165,13 +213,13 @@ section ul {
 
   button {
     background-color: $secondary-color;
-    height: 6rem;
-    width: 24rem;
+    height: 5rem;
+    width: 20rem;
     align-self: center;
     border: none;
     color: #fff;
     margin-top: 2.4rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 }
@@ -234,6 +282,53 @@ section ul {
     color: $secondary-color;
     font-size: 1.3rem;
     margin-left: 0.3rem;
+  }
+}
+
+.logo-section {
+  padding: 3rem 2rem;
+
+  h3 {
+    padding: 0;
+  }
+
+  p {
+    color: $primary-color;
+    text-align: center;
+    margin-top: 2rem;
+    height: auto;
+  }
+
+  div.outer {
+    border: $alternative-color 1px solid;
+    height: 10rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+
+    div.inner {
+      width: 14.5rem;
+      background: url(../../assets/svg-clip.png) left center no-repeat;
+      background-size: 3rem;
+      height: 4rem;
+      display: flex;
+      flex-direction: column;
+      padding-left: 3rem;
+      padding-top: 0.5rem;
+
+      span {
+        display: block;
+      }
+
+      span:first-of-type {
+        font-size: 2rem;
+        line-height: 1rem;
+      }
+    }
   }
 }
 
@@ -302,13 +397,25 @@ section ul {
 
 footer {
   display: flex;
-  height: 8rem;
+  height: 7rem;
   align-items: center;
+
+  div.f-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 3rem;
+    font-weight: 100;
+    font-family: $secondary-font;
+    background: url(../../assets/svg-clip.png) 1rem center no-repeat;
+    background-size: 2rem;
+    height: 4rem;
+  }
 
   div {
     width: 50%;
     padding-right: 2rem;
-    line-height: 1.5rem;
-    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
   }
 }
