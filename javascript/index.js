@@ -9,35 +9,35 @@ const speakers = [
   {
     name: 'Yvonne Aki Sawyerr',
     title: 'Freetown City Mayor',
-    image: '../assets/evon.jpeg',
+    image: './assets/evon.jpeg',
     insight:
       'Yvomme Aki Sawyerr started the #FreetownTheTreeTown campaign. Using digital tools to encourage tree cultivation in the city',
   },
   {
     name: 'Rajagopalan Vasudevan',
     title: 'Professor in Thiagarajar College of Engineering',
-    image: '../assets/vas.jpeg',
+    image: './assets/vas.jpeg',
     insight:
       'Rajagopalan Vasudevan developed an innovative method to reuse plastic waste to construct better, durable and very cost-effective roads.',
   },
   {
     name: 'Vanessa Nakate',
     title: 'Climate Activist.',
-    image: '../assets/Vanessa_Nakate.jpg',
+    image: './assets/Vanessa_Nakate.jpg',
     insight:
       'Vanessa Nakate helped published a letter calling on companies, banks and governments to immediately stop subsidizing fossil fuels',
   },
   {
     name: 'Oladosu Adenike',
     title: 'Climate Activist',
-    image: '../assets/Adenike.png',
+    image: './assets/Adenike.png',
     insight:
       'Founded “ILeadClimate” a youth-led movement which aims to showcase the threat of climate change and how it can create political instability.',
   },
   {
     name: 'Nzambi Matee',
     title: 'Environmentalist',
-    image: '../assets/matee.jpeg',
+    image: './assets/matee.jpeg',
     insight:
       'She pioneered the sustainable efforts by recycling plastic to make bricks that can be even stronger than a concrete',
   },
