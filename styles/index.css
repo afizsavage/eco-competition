@@ -610,6 +610,27 @@ footer div.f-logo {
   #speakers button {
     display: none;
   }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-section div.outer {
+    width: 25rem;
+  }
+
+  footer {
+    height: 12rem;
+    padding: 0 10rem;
+  }
+  footer div {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  footer div.f-logo {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
