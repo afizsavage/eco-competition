@@ -367,7 +367,7 @@ section ul {
   div {
     height: auto;
     display: flex;
-    background: url(./assets/forum.png) left center no-repeat;
+    background: url(../assets/forum.png) left center no-repeat;
     background-size: 3rem;
     padding-left: 1.5rem;
     background-origin: content-box;
@@ -380,13 +380,13 @@ section ul {
   }
 
   div#award {
-    background: url(./assets/winner.png) left center no-repeat;
+    background: url(assets/winner.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
 
   div#lecture {
-    background: url(./assets/press-conference.png) left center no-repeat;
+    background: url(../../assets/press-conference.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
