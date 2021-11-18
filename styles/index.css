@@ -18,6 +18,26 @@ body.disScroll {
 
 header {
   background: url(../../assets/confetti-doodles-2.svg) center no-repeat;
+  position: relative;
+}
+header div.logo {
+  position: absolute;
+  right: 1.5rem;
+  width: 11.5rem;
+  padding-top: 1.3rem;
+}
+header div.logo a {
+  background: url(../../assets/svg-clip.png) left center no-repeat;
+  background-size: auto;
+  background-size: 2.5rem;
+  padding-left: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-decoration: none;
+  line-height: 1.5rem;
+  color: black;
+  display: inline-block;
+  width: 100%;
 }
 
 header.mobile {
@@ -413,6 +433,71 @@ footer div.f-logo {
   background: url(../../assets/svg-clip.png) 1rem center no-repeat;
   background-size: 2rem;
   height: 4rem;
+}
+
+@media (min-width: 992px) {
+  header {
+    background: #fff;
+    height: 6.5rem;
+    padding: 0 10rem;
+    display: flex;
+  }
+  header div.logo {
+    position: static;
+    display: flex;
+    padding-top: 0;
+    align-items: center;
+    width: auto;
+  }
+  header div.logo a {
+    background: url(../../assets/svg-clip.png) left center no-repeat;
+    background-size: 2.5rem;
+    width: 10rem;
+    padding-left: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 1.5rem;
+    color: black;
+  }
+
+  nav {
+    padding: 0;
+  }
+  nav #menu-icon {
+    display: none;
+  }
+  nav div {
+    display: flex;
+    height: 100%;
+  }
+  nav ul {
+    margin-top: 0;
+    margin-left: 20rem;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+  }
+  nav ul li {
+    display: inline;
+    margin-bottom: 0;
+    margin-left: 4rem;
+  }
+  nav ul li a {
+    color: #272a31;
+    font-size: 1.3rem;
+  }
+  nav button {
+    margin-top: 0;
+    height: 60%;
+    align-self: center;
+    background-color: #fff;
+    margin-left: 7rem;
+  }
+
+  section.timeline {
+    height: calc(100vh - 6.5rem);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
