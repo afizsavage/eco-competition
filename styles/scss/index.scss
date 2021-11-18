@@ -717,4 +717,24 @@ footer {
       text-align: left;
     }
   }
+
+  .past-events {
+    padding-bottom: 6.5rem;
+
+    div {
+      display: flex;
+      justify-content: center;
+      margin-top: 3.5rem;
+
+      div {
+        width: 25rem;
+        margin: 0 0.5rem;
+        background-size: cover;
+
+        div {
+          margin: 0;
+        }
+      }
+    }
+  }
 }

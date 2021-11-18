@@ -631,6 +631,23 @@ footer div.f-logo {
   footer div.f-logo {
     text-align: left;
   }
+
+  .past-events {
+    padding-bottom: 6.5rem;
+  }
+  .past-events div {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+  }
+  .past-events div div {
+    width: 25rem;
+    margin: 0 0.5rem;
+    background-size: cover;
+  }
+  .past-events div div div {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
