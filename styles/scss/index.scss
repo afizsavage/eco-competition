@@ -23,6 +23,12 @@ body.disScroll {
   overflow-y: hidden;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: $secondary-color;
+  font-weight: 900;
+}
+
 header {
   background: url(../../assets/confetti-doodles-2.svg) center no-repeat;
   position: relative;
@@ -100,11 +106,11 @@ nav {
       text-align: center;
       margin-bottom: 2rem;
 
-      a {
-        text-decoration: none;
-        color: $secondary-color;
-        font-weight: 900;
-      }
+      // a {
+      //   text-decoration: none;
+      //   color: $secondary-color;
+      //   font-weight: 900;
+      // }
     }
   }
 }
@@ -492,6 +498,11 @@ footer {
 
 // here is the desktop styling
 @media (min-width: 992px) {
+  nav ul li a {
+    color: #272a31;
+    font-size: 1.3rem;
+  }
+
   header {
     background: #fff;
     height: 6.5rem;
@@ -542,11 +553,6 @@ footer {
         display: inline;
         margin-bottom: 0;
         margin-left: 4rem;
-
-        a {
-          color: #272a31;
-          font-size: 1.3rem;
-        }
       }
     }
 
@@ -601,13 +607,37 @@ footer {
       font-size: 3rem;
     }
 
-    div p {
-      width: auto;
-    }
-
     p {
       margin: 2rem 0;
       font-size: 1.1rem;
+    }
+
+    div p {
+      width: auto;
+    }
+  }
+
+  #speakers li {
+    padding-right: 2rem;
+  }
+
+  footer div {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .past-events div {
+    display: flex;
+    justify-content: center;
+
+    div {
+      width: 25rem;
+      margin: 0 0.5rem;
+      background-size: cover;
+
+      div {
+        margin: 0;
+      }
     }
   }
 
@@ -685,10 +715,6 @@ footer {
       grid-template-columns: 50% 50%;
     }
 
-    li {
-      padding-right: 2rem;
-    }
-
     button {
       display: none;
     }
@@ -708,11 +734,6 @@ footer {
     height: 12rem;
     padding: 0 10rem;
 
-    div {
-      text-align: left;
-      font-size: 1.2rem;
-    }
-
     div.f-logo {
       text-align: left;
     }
@@ -720,21 +741,5 @@ footer {
 
   .past-events {
     padding-bottom: 6.5rem;
-
-    div {
-      display: flex;
-      justify-content: center;
-      margin-top: 3.5rem;
-
-      div {
-        width: 25rem;
-        margin: 0 0.5rem;
-        background-size: cover;
-
-        div {
-          margin: 0;
-        }
-      }
-    }
   }
 }

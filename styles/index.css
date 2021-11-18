@@ -16,6 +16,12 @@ body.disScroll {
   overflow-y: hidden;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #ec5242;
+  font-weight: 900;
+}
+
 header {
   background: url(../../assets/confetti-doodles-2.svg) center no-repeat;
   position: relative;
@@ -86,11 +92,6 @@ nav ul {
 nav ul li {
   text-align: center;
   margin-bottom: 2rem;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #ec5242;
-  font-weight: 900;
 }
 
 footer div {
@@ -439,6 +440,11 @@ footer div.f-logo {
 }
 
 @media (min-width: 992px) {
+  nav ul li a {
+    color: #272a31;
+    font-size: 1.3rem;
+  }
+
   header {
     background: #fff;
     height: 6.5rem;
@@ -486,10 +492,6 @@ footer div.f-logo {
     margin-bottom: 0;
     margin-left: 4rem;
   }
-  nav ul li a {
-    color: #272a31;
-    font-size: 1.3rem;
-  }
   nav button {
     margin-top: 0;
     height: 60%;
@@ -534,12 +536,34 @@ footer div.f-logo {
   #about-timeline h2 {
     font-size: 3rem;
   }
-  #about-timeline div p {
-    width: auto;
-  }
   #about-timeline p {
     margin: 2rem 0;
     font-size: 1.1rem;
+  }
+  #about-timeline div p {
+    width: auto;
+  }
+
+  #speakers li {
+    padding-right: 2rem;
+  }
+
+  footer div {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .past-events div {
+    display: flex;
+    justify-content: center;
+  }
+  .past-events div div {
+    width: 25rem;
+    margin: 0 0.5rem;
+    background-size: cover;
+  }
+  .past-events div div div {
+    margin: 0;
   }
 
   #main-program {
@@ -604,9 +628,6 @@ footer div.f-logo {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  #speakers li {
-    padding-right: 2rem;
-  }
   #speakers button {
     display: none;
   }
@@ -624,29 +645,12 @@ footer div.f-logo {
     height: 12rem;
     padding: 0 10rem;
   }
-  footer div {
-    text-align: left;
-    font-size: 1.2rem;
-  }
   footer div.f-logo {
     text-align: left;
   }
 
   .past-events {
     padding-bottom: 6.5rem;
-  }
-  .past-events div {
-    display: flex;
-    justify-content: center;
-    margin-top: 3.5rem;
-  }
-  .past-events div div {
-    width: 25rem;
-    margin: 0 0.5rem;
-    background-size: cover;
-  }
-  .past-events div div div {
-    margin: 0;
   }
 }
 
