@@ -311,6 +311,9 @@ section ul {
   padding: 0 1.1rem;
   margin-top: 1.5rem;
 }
+#main-program a {
+  display: none;
+}
 #main-program li {
   background-color: #d3d3d31e;
   margin-bottom: 0.5rem;
@@ -495,6 +498,10 @@ footer div.f-logo {
     margin-left: 7rem;
   }
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   section.timeline {
     height: calc(100vh - 6.5rem);
     padding: 0 10rem;
@@ -533,6 +540,62 @@ footer div.f-logo {
   #about-timeline p {
     margin: 2rem 0;
     font-size: 1.1rem;
+  }
+
+  #main-program {
+    display: flex;
+    padding-bottom: 5rem;
+  }
+  #main-program ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  #main-program ul li {
+    margin: 0 0.3rem;
+  }
+  #main-program ul li p {
+    padding: 0;
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+  #main-program div {
+    flex-direction: column;
+    height: 15rem;
+    width: 15rem;
+    padding: 0 1rem;
+    background-position: center top;
+  }
+  #main-program div h4 {
+    width: auto;
+    margin: 0;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  #main-program div#award {
+    background: url(../../assets/winner.png) center top no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+  #main-program div#lecture {
+    background: url(../../assets/press-conference.png) center top no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+  #main-program div#eat {
+    background: url(../../assets/eating.png) center top no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+  #main-program button {
+    display: none;
+  }
+  #main-program a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
   }
 }
 

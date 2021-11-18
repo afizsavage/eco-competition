@@ -346,6 +346,10 @@ section ul {
     margin-top: 1.5rem;
   }
 
+  a {
+    display: none;
+  }
+
   li {
     background-color: #d3d3d31e;
     margin-bottom: 0.5rem;
@@ -555,6 +559,10 @@ footer {
     }
   }
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   section.timeline {
     height: calc(100vh - 6.5rem);
     padding: 0 10rem;
@@ -600,6 +608,72 @@ footer {
     p {
       margin: 2rem 0;
       font-size: 1.1rem;
+    }
+  }
+
+  #main-program {
+    display: flex;
+    padding-bottom: 5rem;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+
+      li {
+        margin: 0 0.3rem;
+
+        p {
+          padding: 0;
+          text-align: center;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+
+    div {
+      flex-direction: column;
+      height: 15rem;
+      width: 15rem;
+      padding: 0 1rem;
+      background-position: center top;
+
+      h4 {
+        width: auto;
+        margin: 0;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+    }
+
+    div#award {
+      background: url(../../assets/winner.png) center top no-repeat;
+      background-origin: content-box;
+      background-size: 3rem;
+    }
+
+    div#lecture {
+      background: url(../../assets/press-conference.png) center top no-repeat;
+      background-origin: content-box;
+      background-size: 3rem;
+    }
+
+    div#eat {
+      background: url(../../assets/eating.png) center top no-repeat;
+      background-origin: content-box;
+      background-size: 3rem;
+    }
+
+    button {
+      display: none;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
     }
   }
 }
