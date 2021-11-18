@@ -30,7 +30,7 @@ nav ul li a {
 }
 
 header {
-  background: url(./assets/confetti-doodles-2.svg) center no-repeat;
+  background: url(../assets/confetti-doodles-2.svg) center no-repeat;
   position: relative;
 
   div.logo {
@@ -40,7 +40,7 @@ header {
     padding-top: 1.3rem;
 
     a {
-      background: url(./assets/svg-clip.png) left center no-repeat;
+      background: url(../assets/svg-clip.png) left center no-repeat;
       background-size: auto;
       background-size: 2.5rem;
       padding-left: 2.5rem;
@@ -56,7 +56,7 @@ header {
 }
 
 header.mobile {
-  background: url(./assets/confetti-doodles-2.svg) center no-repeat;
+  background: url(../assets/confetti-doodles-2.svg) center no-repeat;
   height: 100vh;
   position: absolute;
   width: 100%;
@@ -121,7 +121,7 @@ footer div {
   justify-content: center;
   flex-direction: column;
   height: 39rem;
-  background: url(./assets/confetti-doodles-2.svg) center center no-repeat;
+  background: url(../assets/confetti-doodles-2.svg) center center no-repeat;
   background-size: cover;
 
   h1 {
@@ -232,7 +232,7 @@ section ul {
   .speaker-image {
     width: 10rem;
     height: 10rem;
-    background: #fff url(./assets/chessboard-dark.png) top left no-repeat;
+    background: #fff url(../assets/chessboard-dark.png) top left no-repeat;
     background-size: 4.5rem 4.5rem;
     padding-left: 1.2rem;
     padding-top: 1.2rem;
@@ -337,7 +337,7 @@ section ul {
 #main-program {
   color: #fff;
   padding: 3rem 0;
-  background: $primary-color url(./assets/program-bg.png) top left repeat;
+  background: $primary-color url(../assets/program-bg.png) top left repeat;
   display: flex;
   flex-direction: column;
 
@@ -380,19 +380,19 @@ section ul {
   }
 
   div#award {
-    background: url(assets/winner.png) left center no-repeat;
+    background: url(../assets/winner.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
 
   div#lecture {
-    background: url(../../assets/press-conference.png) left center no-repeat;
+    background: url(../assets/press-conference.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
 
   div#eat {
-    background: url(./assets/eating.png) left center no-repeat;
+    background: url(../assets/eating.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
@@ -435,7 +435,7 @@ section ul {
 
     div.inner {
       width: 14.5rem;
-      background: url(./assets/svg-clip.png) left center no-repeat;
+      background: url(../assets/svg-clip.png) left center no-repeat;
       background-size: 3rem;
       height: 4rem;
       display: flex;
@@ -451,13 +451,13 @@ section ul {
   border-top: $alternative-color 1px solid;
 
   .bg-image {
-    background: url(./assets/solidwastec.jpg) center center no-repeat;
+    background: url(../assets/solidwastec.jpg) center center no-repeat;
     background-size: cover;
     height: 15rem;
   }
 
   #bangalore {
-    background: url(./assets/bang.jpeg) center center no-repeat;
+    background: url(../assets/bang.jpeg) center center no-repeat;
     background-size: cover;
     height: 15rem;
   }
@@ -484,7 +484,7 @@ footer {
     padding-left: 3rem;
     font-weight: 100;
     font-family: $secondary-font;
-    background: url(./assets/svg-clip.png) 1rem center no-repeat;
+    background: url(../assets/svg-clip.png) 1rem center no-repeat;
     background-size: 2rem;
     height: 4rem;
   }
@@ -511,7 +511,7 @@ footer {
       width: auto;
 
       a {
-        background: url(./assets/svg-clip.png) left center no-repeat;
+        background: url(../assets/svg-clip.png) left center no-repeat;
         background-size: 2.5rem;
         width: 10rem;
         padding-left: 2.5rem;
@@ -672,19 +672,19 @@ footer {
     }
 
     div#award {
-      background: url(./assets/winner.png) center top no-repeat;
+      background: url(../assets/winner.png) center top no-repeat;
       background-origin: content-box;
       background-size: 3rem;
     }
 
     div#lecture {
-      background: url(./assets/press-conference.png) center top no-repeat;
+      background: url(../assets/press-conference.png) center top no-repeat;
       background-origin: content-box;
       background-size: 3rem;
     }
 
     div#eat {
-      background: url(./assets/eating.png) center top no-repeat;
+      background: url(../assets/eating.png) center top no-repeat;
       background-origin: content-box;
       background-size: 3rem;
     }
