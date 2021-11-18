@@ -597,6 +597,19 @@ footer div.f-logo {
     color: #fff;
     font-weight: 700;
   }
+
+  #speakers ul {
+    padding: 0 10rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #speakers li {
+    padding-right: 2rem;
+  }
+  #speakers button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

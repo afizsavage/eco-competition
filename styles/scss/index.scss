@@ -676,4 +676,21 @@ footer {
       font-weight: 700;
     }
   }
+
+  #speakers {
+    ul {
+      padding: 0 10rem;
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    li {
+      padding-right: 2rem;
+    }
+
+    button {
+      display: none;
+    }
+  }
 }
