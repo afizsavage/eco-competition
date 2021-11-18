@@ -2,7 +2,7 @@ const speakers = [
   {
     name: 'Greta Thunberg',
     title: 'Environmental Activist',
-    image: '../assets/index.jpeg',
+    image: './assets/index.jpeg',
     insight:
       'Greta Thunberg influenced multiple coordinated multi-city protests involving over a million students each.',
   },
