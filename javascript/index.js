@@ -43,8 +43,29 @@ const speakers = [
   },
 ];
 
+const body = document.querySelector('body');
+const menuIcon = document.querySelector('nav i');
+const mobileMenu = document.querySelector('nav > div');
+const header = document.querySelector('header');
 const speakersSection = document.getElementById('speakers');
 const seemoreBtn = document.getElementById('more');
+
+function checkIfMenuOpen(menu, button) {
+  if (menu.classList.contains('show')) {
+    button.className = 'fas fa-times';
+    body.classList.add('disScroll');
+    header.classList.add('mobile');
+  } else {
+    button.className = 'fas fa-bars';
+    body.classList.remove('disScroll');
+    header.classList.remove('mobile');
+  }
+}
+
+menuIcon.addEventListener('click', () => {
+  mobileMenu.classList.toggle('show');
+  checkIfMenuOpen(mobileMenu, menuIcon);
+});
 
 function createSpeakerCards() {
   let cardContent = '';

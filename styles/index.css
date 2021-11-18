@@ -12,8 +12,26 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+body.disScroll {
+  overflow-y: hidden;
+}
+
+header {
+  background: url(../../assets/confetti-doodles-2.svg) center no-repeat;
+}
+
+header.mobile {
+  background: url(../../assets/confetti-doodles-2.svg) center no-repeat;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
 nav {
   padding: 1.3rem 2rem;
+  width: 100%;
+  height: 100%;
 }
 nav #menu-icon {
   font-size: 3rem;
@@ -22,10 +40,37 @@ nav #menu-icon {
 nav div {
   display: none;
 }
+nav button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: #ec5242 4px solid;
+  font-size: 1.5rem;
+  color: #ec5242;
+  font-weight: 900;
+}
+nav div.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 nav ul {
   margin: 0;
+  margin-top: 6rem;
   padding: 0;
   list-style: none;
+  font-size: 1.7rem;
+}
+nav ul li {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ec5242;
+  font-weight: 900;
 }
 
 footer div {
