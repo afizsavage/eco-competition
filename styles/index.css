@@ -15,16 +15,13 @@ body {
 nav {
   padding: 1.3rem 2rem;
 }
-
 nav #menu-icon {
   font-size: 3rem;
   color: #272a31;
 }
-
 nav div {
   display: none;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -46,7 +43,6 @@ footer div {
   background: url(../../assets/confetti-doodles-2.svg) center center no-repeat;
   background-size: cover;
 }
-
 .timeline h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
@@ -55,7 +51,6 @@ footer div {
   line-height: 2.6rem;
   font-size: 2.3rem;
 }
-
 .timeline p {
   margin: 1rem 1rem;
   margin-top: 1.8rem;
@@ -64,16 +59,13 @@ footer div {
   border: #fff 4px solid;
   line-height: 1.7rem;
 }
-
 .timeline div {
   padding: 0 1.2rem;
 }
-
 .timeline div span {
   font-size: 1.1rem;
   margin-top: 0.5rem;
 }
-
 .timeline h2 {
   font-family: "COCOGOOSE", sans-serif;
   color: #272a31;
@@ -151,7 +143,6 @@ section ul {
 #speakers {
   padding: 3rem 1.5rem;
 }
-
 #speakers .speaker-image {
   width: 10rem;
   height: 10rem;
@@ -161,25 +152,22 @@ section ul {
   padding-top: 1.2rem;
   margin-right: 1.3rem;
 }
-
 #speakers .speaker-details {
   padding-top: 0.5rem;
 }
-
 #speakers li {
   display: flex;
   font-size: 1.2rem;
   color: #272a31;
+  margin-bottom: 2rem;
 }
-
 #speakers p:first-of-type {
   color: #ec5242;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin: 0.4rem 0;
   margin-bottom: 1.7rem;
   position: relative;
 }
-
 #speakers p:first-of-type::after {
   content: "";
   position: absolute;
@@ -189,7 +177,6 @@ section ul {
   background-color: #d3d3d3;
   left: 0;
 }
-
 #speakers button {
   width: 100%;
   height: 3rem;
@@ -198,7 +185,6 @@ section ul {
   margin-top: 1rem;
   font-size: 1rem;
 }
-
 #speakers .fas {
   color: #ec5242;
   font-size: 1.3rem;
@@ -231,7 +217,6 @@ section ul {
   background-color: #ec534298;
   z-index: 2;
 }
-
 .past-events .bg-image div h4 {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -241,7 +226,6 @@ section ul {
   text-align: center;
   font-size: 2.1rem;
 }
-
 #about-timeline div span {
   display: block;
   width: 100%;
@@ -258,18 +242,15 @@ section ul {
   display: flex;
   flex-direction: column;
 }
-
 #main-program ul {
   padding: 0 1.1rem;
   margin-top: 1.5rem;
 }
-
 #main-program li {
   background-color: #d3d3d31e;
   margin-bottom: 0.5rem;
   padding: 1rem 0;
 }
-
 #main-program li h4 {
   display: flex;
   align-items: center;
@@ -277,7 +258,6 @@ section ul {
   font-size: 1.2rem;
   font-weight: 800;
 }
-
 #main-program div {
   height: auto;
   display: flex;
@@ -286,36 +266,30 @@ section ul {
   padding-left: 1.5rem;
   background-origin: content-box;
 }
-
 #main-program div h4 {
   width: 15rem;
   color: #ec5242;
   margin-left: 5rem;
 }
-
 #main-program div#award {
   background: url(../../assets/winner.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
-
 #main-program div#lecture {
   background: url(../../assets/press-conference.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
-
 #main-program div#eat {
   background: url(../../assets/eating.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
-
 #main-program #programs-icon {
   color: #fff;
   font-size: 2rem;
 }
-
 #main-program button {
   background-color: #ec5242;
   height: 5rem;
@@ -331,11 +305,9 @@ section ul {
 .logo-section {
   padding: 3rem 2rem;
 }
-
 .logo-section h3 {
   padding: 0;
 }
-
 .logo-section div.outer {
   border: #d3d3d3 1px solid;
   height: 10rem;
@@ -347,7 +319,6 @@ section ul {
   font-size: 1.8rem;
   font-weight: 900;
 }
-
 .logo-section div.outer div.inner {
   width: 14.5rem;
   background: url(../../assets/svg-clip.png) left center no-repeat;
@@ -363,13 +334,11 @@ section ul {
   padding: 3rem 3rem;
   border-top: #d3d3d3 1px solid;
 }
-
 .past-events .bg-image {
   background: url(../../assets/solidwastec.jpg) center center no-repeat;
   background-size: cover;
   height: 15rem;
 }
-
 .past-events #bangalore {
   background: url(../../assets/bang.jpeg) center center no-repeat;
   background-size: cover;
@@ -380,7 +349,6 @@ section ul {
   background-color: #272a31;
   padding: 2.5rem 0;
 }
-
 .partners h3 {
   color: #fff;
 }
@@ -390,7 +358,6 @@ footer {
   height: 7rem;
   align-items: center;
 }
-
 footer div.f-logo {
   display: flex;
   align-items: center;
