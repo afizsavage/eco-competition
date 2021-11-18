@@ -17,11 +17,6 @@ $alternative-color: #d3d3d3;
 
 body {
   font-family: $primary-font;
-  background: #fff url(../../assets/imgcrop1.webp) top center no-repeat;
-}
-
-header {
-  background-color: #d3d3d3e3;
 }
 
 nav {
@@ -43,13 +38,20 @@ nav {
   }
 }
 
+footer div {
+  width: 50%;
+  padding-right: 2rem;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+}
+
 .timeline {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 39rem;
-  // background-color: rgba(255, 255, 255, 0.541);
-  background-color: rgba(151, 150, 150, 0.226);
+  background: url(../../assets/confetti-doodles-2.svg) center center no-repeat;
+  background-size: cover;
 
   h1 {
     font-family: $secondary-font;
@@ -74,7 +76,7 @@ nav {
 
     span {
       font-size: 1.1rem;
-      margin-top: 0.5;
+      margin-top: 0.5rem;
     }
   }
 
@@ -107,16 +109,145 @@ section ul {
   list-style: none;
 }
 
+.logo-section p {
+  color: $primary-color;
+  text-align: center;
+  margin-top: 2rem;
+  height: auto;
+}
+
+.past-events p {
+  text-align: center;
+  line-height: 1.5rem;
+  color: $primary-color;
+}
+
+.past-events .bg-image div p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+#about-timeline p {
+  background-color: #fff;
+  border: $alternative-color 1px solid;
+  text-align: center;
+}
+
+#speakers p {
+  font-size: 0.9rem;
+}
+
+#about-timeline div p {
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding-top: 0.6rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+#main-program li p {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#speakers {
+  padding: 3rem 1.5rem;
+
+  .speaker-image {
+    width: 10rem;
+    height: 10rem;
+    background: #fff url(../../assets/chessboard-dark.png) top left no-repeat;
+    background-size: 4.5rem 4.5rem;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    margin-right: 1.3rem;
+  }
+
+  .speaker-details {
+    padding-top: 0.5rem;
+  }
+
+  li {
+    display: flex;
+    font-size: 1.2rem;
+    color: $primary-color;
+  }
+
+  p:first-of-type {
+    color: $secondary-color;
+    font-size: 1.1rem;
+    margin: 0.4rem 0;
+    margin-bottom: 1.7rem;
+    position: relative;
+  }
+
+  p:first-of-type::after {
+    content: '';
+    position: absolute;
+    height: 0.1rem;
+    width: 8%;
+    bottom: -0.9rem;
+    background-color: $alternative-color;
+    left: 0;
+  }
+
+  button {
+    width: 100%;
+    height: 3rem;
+    background-color: #fff;
+    border: $alternative-color 1px solid;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .fas {
+    color: $secondary-color;
+    font-size: 1.3rem;
+    margin-left: 0.3rem;
+  }
+}
+
+.logo-section div.outer div.inner span {
+  display: block;
+}
+
+.logo-section div.outer div.inner span:first-of-type {
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+.past-events div {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.past-events .bg-image div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #ec534298;
+  z-index: 2;
+
+  h4 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+}
+
 #about-timeline {
   h1 {
     text-align: center;
     font-size: 2.1rem;
-  }
-
-  p {
-    background-color: #fff;
-    border: $alternative-color 1px solid;
-    text-align: center;
   }
 
   div {
@@ -127,15 +258,6 @@ section ul {
       font-weight: bolder;
       font-size: 1rem;
       text-decoration: underline;
-    }
-
-    p {
-      background-color: inherit;
-      border: none;
-      margin: 0;
-      padding-top: 0.6rem;
-      padding-bottom: 0.2rem;
-      font-size: 0.9rem;
     }
   }
 }
@@ -163,13 +285,6 @@ section ul {
       margin-right: 1rem;
       font-size: 1.2rem;
       font-weight: 800;
-    }
-
-    p {
-      display: flex;
-      align-items: center;
-      padding-right: 0.5rem;
-      font-size: 1rem;
     }
   }
 
@@ -224,79 +339,11 @@ section ul {
   }
 }
 
-#speakers {
-  padding: 3rem 1.5rem;
-
-  .speaker-image {
-    width: 10rem;
-    height: 10rem;
-    background: #fff url(../../assets/chessboard-dark.png) top left no-repeat;
-    background-size: 4.5rem 4.5rem;
-    padding-left: 1.2rem;
-    padding-top: 1.2rem;
-    margin-right: 1.3rem;
-  }
-
-  .speaker-details {
-    padding-top: 0.5rem;
-  }
-
-  li {
-    display: flex;
-    font-size: 1.2rem;
-    color: $primary-color;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  p:first-of-type {
-    color: $secondary-color;
-    font-size: 1.1rem;
-    margin: 0.4rem 0;
-    margin-bottom: 1.7rem;
-    position: relative;
-  }
-
-  p:first-of-type::after {
-    content: '';
-    position: absolute;
-    height: 0.1rem;
-    width: 8%;
-    bottom: -0.9rem;
-    background-color: $alternative-color;
-    left: 0;
-  }
-
-  button {
-    width: 100%;
-    height: 3rem;
-    background-color: #fff;
-    border: $alternative-color 1px solid;
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-
-  .fas {
-    color: $secondary-color;
-    font-size: 1.3rem;
-    margin-left: 0.3rem;
-  }
-}
-
 .logo-section {
   padding: 3rem 2rem;
 
   h3 {
     padding: 0;
-  }
-
-  p {
-    color: $primary-color;
-    text-align: center;
-    margin-top: 2rem;
-    height: auto;
   }
 
   div.outer {
@@ -319,15 +366,6 @@ section ul {
       flex-direction: column;
       padding-left: 3rem;
       padding-top: 0.5rem;
-
-      span {
-        display: block;
-      }
-
-      span:first-of-type {
-        font-size: 2rem;
-        line-height: 1rem;
-      }
     }
   }
 }
@@ -336,53 +374,16 @@ section ul {
   padding: 3rem 3rem;
   border-top: $alternative-color 1px solid;
 
-  div {
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
-  }
-
   .bg-image {
     background: url(../../assets/solidwastec.jpg) center center no-repeat;
     background-size: cover;
     height: 15rem;
-
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      width: 100%;
-      height: 100%;
-      background-color: #ec534298;
-      z-index: 2;
-
-      h4 {
-        font-size: 2.5rem;
-        font-weight: bolder;
-      }
-
-      p {
-        font-weight: 900;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-top: 0.5rem;
-      }
-    }
   }
 
   #bangalore {
     background: url(../../assets/bang.jpeg) center center no-repeat;
     background-size: cover;
     height: 15rem;
-  }
-
-  p {
-    text-align: center;
-    line-height: 1.5rem;
-    color: $primary-color;
   }
 }
 
@@ -410,12 +411,5 @@ footer {
     background: url(../../assets/svg-clip.png) 1rem center no-repeat;
     background-size: 2rem;
     height: 4rem;
-  }
-
-  div {
-    width: 50%;
-    padding-right: 2rem;
-    line-height: 1.3rem;
-    font-size: 0.8rem;
   }
 }

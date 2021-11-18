@@ -69,6 +69,8 @@ Give a ⭐️ if you like this project!
 
 Hey! Remember you have to attribute Freepik
 
+You can credit SVG Backgrounds by sharing SVGBackgrounds.com on your website, blog, or social media.
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

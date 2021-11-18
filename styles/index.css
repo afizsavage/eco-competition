@@ -10,27 +10,32 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background: #fff url(../../assets/imgcrop1.webp) top center no-repeat;
-}
-
-header {
-  background-color: #d3d3d3e3;
 }
 
 nav {
   padding: 1.3rem 2rem;
 }
+
 nav #menu-icon {
   font-size: 3rem;
   color: #272a31;
 }
+
 nav div {
   display: none;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+footer div {
+  width: 50%;
+  padding-right: 2rem;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
 }
 
 .timeline {
@@ -38,8 +43,10 @@ nav ul {
   justify-content: center;
   flex-direction: column;
   height: 39rem;
-  background-color: rgba(151, 150, 150, 0.226);
+  background: url(../../assets/confetti-doodles-2.svg) center center no-repeat;
+  background-size: cover;
 }
+
 .timeline h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
@@ -48,6 +55,7 @@ nav ul {
   line-height: 2.6rem;
   font-size: 2.3rem;
 }
+
 .timeline p {
   margin: 1rem 1rem;
   margin-top: 1.8rem;
@@ -56,13 +64,16 @@ nav ul {
   border: #fff 4px solid;
   line-height: 1.7rem;
 }
+
 .timeline div {
   padding: 0 1.2rem;
 }
+
 .timeline div span {
   font-size: 1.1rem;
-  margin-top: 0.5;
+  margin-top: 0.5rem;
 }
+
 .timeline h2 {
   font-family: "COCOGOOSE", sans-serif;
   color: #272a31;
@@ -91,23 +102,36 @@ section ul {
   list-style: none;
 }
 
-#about-timeline h1 {
+.logo-section p {
+  color: #272a31;
   text-align: center;
-  font-size: 2.1rem;
+  margin-top: 2rem;
+  height: auto;
 }
+
+.past-events p {
+  text-align: center;
+  line-height: 1.5rem;
+  color: #272a31;
+}
+
+.past-events .bg-image div p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
 #about-timeline p {
   background-color: #fff;
   border: #d3d3d3 1px solid;
   text-align: center;
 }
-#about-timeline div span {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 1rem;
-  text-decoration: underline;
+
+#speakers p {
+  font-size: 0.9rem;
 }
+
 #about-timeline div p {
   background-color: inherit;
   border: none;
@@ -117,6 +141,116 @@ section ul {
   font-size: 0.9rem;
 }
 
+#main-program li p {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#speakers {
+  padding: 3rem 1.5rem;
+}
+
+#speakers .speaker-image {
+  width: 10rem;
+  height: 10rem;
+  background: #fff url(../../assets/chessboard-dark.png) top left no-repeat;
+  background-size: 4.5rem 4.5rem;
+  padding-left: 1.2rem;
+  padding-top: 1.2rem;
+  margin-right: 1.3rem;
+}
+
+#speakers .speaker-details {
+  padding-top: 0.5rem;
+}
+
+#speakers li {
+  display: flex;
+  font-size: 1.2rem;
+  color: #272a31;
+}
+
+#speakers p:first-of-type {
+  color: #ec5242;
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+  margin-bottom: 1.7rem;
+  position: relative;
+}
+
+#speakers p:first-of-type::after {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 8%;
+  bottom: -0.9rem;
+  background-color: #d3d3d3;
+  left: 0;
+}
+
+#speakers button {
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  border: #d3d3d3 1px solid;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#speakers .fas {
+  color: #ec5242;
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+.logo-section div.outer div.inner span {
+  display: block;
+}
+
+.logo-section div.outer div.inner span:first-of-type {
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+.past-events div {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.past-events .bg-image div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #ec534298;
+  z-index: 2;
+}
+
+.past-events .bg-image div h4 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+#about-timeline h1 {
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+#about-timeline div span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
 #main-program {
   color: #fff;
   padding: 3rem 0;
@@ -124,15 +258,18 @@ section ul {
   display: flex;
   flex-direction: column;
 }
+
 #main-program ul {
   padding: 0 1.1rem;
   margin-top: 1.5rem;
 }
+
 #main-program li {
   background-color: #d3d3d31e;
   margin-bottom: 0.5rem;
   padding: 1rem 0;
 }
+
 #main-program li h4 {
   display: flex;
   align-items: center;
@@ -140,12 +277,7 @@ section ul {
   font-size: 1.2rem;
   font-weight: 800;
 }
-#main-program li p {
-  display: flex;
-  align-items: center;
-  padding-right: 0.5rem;
-  font-size: 1rem;
-}
+
 #main-program div {
   height: auto;
   display: flex;
@@ -154,30 +286,36 @@ section ul {
   padding-left: 1.5rem;
   background-origin: content-box;
 }
+
 #main-program div h4 {
   width: 15rem;
   color: #ec5242;
   margin-left: 5rem;
 }
+
 #main-program div#award {
   background: url(../../assets/winner.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
+
 #main-program div#lecture {
   background: url(../../assets/press-conference.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
+
 #main-program div#eat {
   background: url(../../assets/eating.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
+
 #main-program #programs-icon {
   color: #fff;
   font-size: 2rem;
 }
+
 #main-program button {
   background-color: #ec5242;
   height: 5rem;
@@ -190,71 +328,14 @@ section ul {
   font-weight: 500;
 }
 
-#speakers {
-  padding: 3rem 1.5rem;
-}
-#speakers .speaker-image {
-  width: 10rem;
-  height: 10rem;
-  background: #fff url(../../assets/chessboard-dark.png) top left no-repeat;
-  background-size: 4.5rem 4.5rem;
-  padding-left: 1.2rem;
-  padding-top: 1.2rem;
-  margin-right: 1.3rem;
-}
-#speakers .speaker-details {
-  padding-top: 0.5rem;
-}
-#speakers li {
-  display: flex;
-  font-size: 1.2rem;
-  color: #272a31;
-}
-#speakers p {
-  font-size: 0.9rem;
-}
-#speakers p:first-of-type {
-  color: #ec5242;
-  font-size: 1.1rem;
-  margin: 0.4rem 0;
-  margin-bottom: 1.7rem;
-  position: relative;
-}
-#speakers p:first-of-type::after {
-  content: "";
-  position: absolute;
-  height: 0.1rem;
-  width: 8%;
-  bottom: -0.9rem;
-  background-color: #d3d3d3;
-  left: 0;
-}
-#speakers button {
-  width: 100%;
-  height: 3rem;
-  background-color: #fff;
-  border: #d3d3d3 1px solid;
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-#speakers .fas {
-  color: #ec5242;
-  font-size: 1.3rem;
-  margin-left: 0.3rem;
-}
-
 .logo-section {
   padding: 3rem 2rem;
 }
+
 .logo-section h3 {
   padding: 0;
 }
-.logo-section p {
-  color: #272a31;
-  text-align: center;
-  margin-top: 2rem;
-  height: auto;
-}
+
 .logo-section div.outer {
   border: #d3d3d3 1px solid;
   height: 10rem;
@@ -266,6 +347,7 @@ section ul {
   font-size: 1.8rem;
   font-weight: 900;
 }
+
 .logo-section div.outer div.inner {
   width: 14.5rem;
   background: url(../../assets/svg-clip.png) left center no-repeat;
@@ -276,65 +358,29 @@ section ul {
   padding-left: 3rem;
   padding-top: 0.5rem;
 }
-.logo-section div.outer div.inner span {
-  display: block;
-}
-.logo-section div.outer div.inner span:first-of-type {
-  font-size: 2rem;
-  line-height: 1rem;
-}
 
 .past-events {
   padding: 3rem 3rem;
   border-top: #d3d3d3 1px solid;
 }
-.past-events div {
-  width: 100%;
-  height: auto;
-  margin-top: 2rem;
-}
+
 .past-events .bg-image {
   background: url(../../assets/solidwastec.jpg) center center no-repeat;
   background-size: cover;
   height: 15rem;
 }
-.past-events .bg-image div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  background-color: #ec534298;
-  z-index: 2;
-}
-.past-events .bg-image div h4 {
-  font-size: 2.5rem;
-  font-weight: bolder;
-}
-.past-events .bg-image div p {
-  font-weight: 900;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: 0.5rem;
-}
+
 .past-events #bangalore {
   background: url(../../assets/bang.jpeg) center center no-repeat;
   background-size: cover;
   height: 15rem;
-}
-.past-events p {
-  text-align: center;
-  line-height: 1.5rem;
-  color: #272a31;
 }
 
 .partners {
   background-color: #272a31;
   padding: 2.5rem 0;
 }
+
 .partners h3 {
   color: #fff;
 }
@@ -344,6 +390,7 @@ footer {
   height: 7rem;
   align-items: center;
 }
+
 footer div.f-logo {
   display: flex;
   align-items: center;
@@ -354,12 +401,6 @@ footer div.f-logo {
   background: url(../../assets/svg-clip.png) 1rem center no-repeat;
   background-size: 2rem;
   height: 4rem;
-}
-footer div {
-  width: 50%;
-  padding-right: 2rem;
-  line-height: 1.3rem;
-  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=index.css.map */
