@@ -497,6 +497,42 @@ footer div.f-logo {
 
   section.timeline {
     height: calc(100vh - 6.5rem);
+    padding: 0 10rem;
+  }
+  section.timeline h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    width: 70%;
+  }
+  section.timeline h2 {
+    font-size: 3rem;
+    margin-top: 0.4rem;
+  }
+  section.timeline p {
+    width: 55%;
+    font-size: 1.5rem;
+  }
+  section.timeline div span {
+    font-size: 2rem;
+  }
+
+  #about-timeline {
+    align-items: center;
+  }
+  #about-timeline h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    width: 70%;
+  }
+  #about-timeline h2 {
+    font-size: 3rem;
+  }
+  #about-timeline div p {
+    width: auto;
+  }
+  #about-timeline p {
+    margin: 2rem 0;
+    font-size: 1.1rem;
   }
 }
 

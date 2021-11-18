@@ -557,5 +557,49 @@ footer {
 
   section.timeline {
     height: calc(100vh - 6.5rem);
+    padding: 0 10rem;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      width: 70%;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-top: 0.4rem;
+    }
+
+    p {
+      width: 55%;
+      font-size: 1.5rem;
+    }
+
+    div span {
+      font-size: 2rem;
+    }
+  }
+
+  #about-timeline {
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      width: 70%;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    div p {
+      width: auto;
+    }
+
+    p {
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
   }
 }
