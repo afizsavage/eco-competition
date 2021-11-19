@@ -381,7 +381,7 @@ section ul {
     }
   }
 
-  div {
+  .box {
     height: auto;
     display: flex;
     background: url(../assets/forum.png) left center no-repeat;
@@ -396,19 +396,19 @@ section ul {
     }
   }
 
-  div#award {
+  #award {
     background: url(../assets/winner.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
 
-  div#lecture {
+  #lecture {
     background: url(../assets/press-conference.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
 
-  div#eat {
+  #eat {
     background: url(../assets/eating.png) left center no-repeat;
     background-origin: content-box;
     background-size: 3rem;
@@ -580,6 +580,11 @@ footer {
     font-size: 1.5rem;
   }
 
+  h3::after {
+    width: 3rem;
+    left: 48.7%;
+  }
+
   section.timeline {
     height: calc(100vh - 6.5rem);
     padding: 0 10rem;
@@ -680,7 +685,7 @@ footer {
       }
     }
 
-    div {
+    .box {
       flex-direction: column;
       height: 15rem;
       width: 15rem;
@@ -695,19 +700,19 @@ footer {
       }
     }
 
-    div#award {
+    #award {
       background: url(../assets/winner.png) center top no-repeat;
       background-origin: content-box;
       background-size: 3rem;
     }
 
-    div#lecture {
+    #lecture {
       background: url(../assets/press-conference.png) center top no-repeat;
       background-origin: content-box;
       background-size: 3rem;
     }
 
-    div#eat {
+    #eat {
       background: url(../assets/eating.png) center top no-repeat;
       background-origin: content-box;
       background-size: 3rem;

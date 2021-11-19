@@ -371,7 +371,7 @@ section ul {
   font-weight: 800;
 }
 
-#main-program div {
+#main-program .box {
   height: auto;
   display: flex;
   background: url(../assets/forum.png) left center no-repeat;
@@ -380,25 +380,25 @@ section ul {
   background-origin: content-box;
 }
 
-#main-program div h4 {
+#main-program .box h4 {
   width: 15rem;
   color: #ec5242;
   margin-left: 5rem;
 }
 
-#main-program div#award {
+#main-program #award {
   background: url(../assets/winner.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
 
-#main-program div#lecture {
+#main-program #lecture {
   background: url(../assets/press-conference.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
 
-#main-program div#eat {
+#main-program #eat {
   background: url(../assets/eating.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
@@ -568,6 +568,11 @@ footer div.f-logo {
     font-size: 1.5rem;
   }
 
+  h3::after {
+    width: 3rem;
+    left: 48.7%;
+  }
+
   section.timeline {
     height: calc(100vh - 6.5rem);
     padding: 0 10rem;
@@ -669,7 +674,7 @@ footer div.f-logo {
     margin-top: 0.8rem;
   }
 
-  #main-program div {
+  #main-program .box {
     flex-direction: column;
     height: 15rem;
     width: 15rem;
@@ -677,26 +682,26 @@ footer div.f-logo {
     background-position: center top;
   }
 
-  #main-program div h4 {
+  #main-program .box h4 {
     width: auto;
     margin: 0;
     justify-content: center;
     margin-top: 4rem;
   }
 
-  #main-program div#award {
+  #main-program #award {
     background: url(../assets/winner.png) center top no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
 
-  #main-program div#lecture {
+  #main-program #lecture {
     background: url(../assets/press-conference.png) center top no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
 
-  #main-program div#eat {
+  #main-program #eat {
     background: url(../assets/eating.png) center top no-repeat;
     background-origin: content-box;
     background-size: 3rem;
