@@ -1,0 +1,812 @@
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'COCOGOOSE', sans-serif;
+
+$primary-color: #272a31;
+$secondary-color: #ec5242;
+$alternative-color: #d3d3d3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+body.disScroll {
+  overflow-y: hidden;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: $secondary-color;
+  font-weight: 900;
+}
+
+header {
+  background: url(../assets/confetti-doodles-2.svg) center no-repeat;
+  position: relative;
+
+  div.logo {
+    position: absolute;
+    right: 1.5rem;
+    width: 11.5rem;
+    padding-top: 1.3rem;
+
+    a {
+      background: url(../assets/svg-clip.png) left center no-repeat;
+      background-size: auto;
+      background-size: 2.5rem;
+      padding-left: 2.5rem;
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-decoration: none;
+      line-height: 1.5rem;
+      color: black;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  div.social {
+    display: none;
+  }
+}
+
+header.mobile {
+  background: url(../assets/confetti-doodles-2.svg) center no-repeat;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+nav {
+  padding: 1.3rem 2rem;
+  width: 100%;
+  height: 100%;
+
+  #menu-icon {
+    font-size: 3rem;
+    color: $primary-color;
+  }
+
+  div {
+    display: none;
+  }
+
+  button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border: $secondary-color 4px solid;
+    font-size: 1.5rem;
+    color: $secondary-color;
+    font-weight: 900;
+  }
+
+  div.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 6rem;
+    padding: 0;
+    list-style: none;
+    font-size: 1.7rem;
+
+    li {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+footer div {
+  width: 50%;
+  padding-right: 2rem;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 39rem;
+  background: url(../assets/confetti-doodles-2.svg) center center no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-family: $secondary-font;
+    color: $secondary-color;
+    text-transform: uppercase;
+    margin: 0 1.5rem;
+    line-height: 2.6rem;
+    font-size: 2.3rem;
+  }
+
+  p {
+    margin: 1rem 1rem;
+    margin-top: 1.8rem;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    border: #fff 4px solid;
+    line-height: 1.7rem;
+  }
+
+  div {
+    padding: 0 1.2rem;
+
+    span {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  h2 {
+    font-family: $secondary-font;
+    color: $primary-color;
+    font-size: 1.8rem;
+  }
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+  height: auto;
+  font-size: 1.3rem;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  height: 0.1rem;
+  width: 10%;
+  bottom: -1rem;
+  background-color: $secondary-color;
+  left: 45%;
+}
+
+section ul {
+  list-style: none;
+}
+
+.logo-section p {
+  color: $primary-color;
+  text-align: center;
+  margin-top: 2rem;
+  height: auto;
+}
+
+.past-events p {
+  text-align: center;
+  line-height: 1.5rem;
+  color: $primary-color;
+}
+
+.past-events .bg-image div p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+#about-timeline p {
+  background-color: #fff;
+  border: $alternative-color 1px solid;
+  text-align: center;
+}
+
+#speakers p {
+  font-size: 0.9rem;
+}
+
+#about-timeline div p {
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding-top: 0.6rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+#main-program li p {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#speakers {
+  padding: 3rem 1.5rem;
+
+  .speaker-image {
+    width: 10rem;
+    height: 10rem;
+    background: #fff url(../assets/chessboard-dark.png) top left no-repeat;
+    background-size: 4.5rem 4.5rem;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    margin-right: 1.3rem;
+  }
+
+  .speaker-details {
+    padding-top: 0.5rem;
+  }
+
+  li {
+    display: flex;
+    font-size: 1.2rem;
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  p:first-of-type {
+    color: $secondary-color;
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+    margin-bottom: 1.7rem;
+    position: relative;
+  }
+
+  p:first-of-type::after {
+    content: '';
+    position: absolute;
+    height: 0.1rem;
+    width: 8%;
+    bottom: -0.9rem;
+    background-color: $alternative-color;
+    left: 0;
+  }
+
+  button {
+    width: 100%;
+    height: 3rem;
+    background-color: #fff;
+    border: $alternative-color 1px solid;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .fas {
+    color: $secondary-color;
+    font-size: 1.3rem;
+    margin-left: 0.3rem;
+  }
+}
+
+.logo-section div.outer div.inner span {
+  display: block;
+}
+
+.logo-section div.outer div.inner span:first-of-type {
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+.past-events div {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.partners > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 1rem;
+    }
+  }
+}
+
+.past-events .bg-image div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #ec534298;
+  z-index: 2;
+
+  h4 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+}
+
+#about-timeline {
+  h1 {
+    text-align: center;
+    font-size: 2.1rem;
+  }
+
+  div {
+    span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+#main-program {
+  color: #fff;
+  padding: 3rem 0;
+  background: $primary-color url(../assets/program-bg.png) top left repeat;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    padding: 0 1.1rem;
+    margin-top: 1.5rem;
+  }
+
+  a {
+    display: none;
+  }
+
+  li {
+    background-color: #d3d3d31e;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+
+    h4 {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+  }
+
+  .box {
+    height: auto;
+    display: flex;
+    background: url(../assets/forum.png) left center no-repeat;
+    background-size: 3rem;
+    padding-left: 1.5rem;
+    background-origin: content-box;
+
+    h4 {
+      width: 15rem;
+      color: $secondary-color;
+      margin-left: 5rem;
+    }
+  }
+
+  #award {
+    background: url(../assets/winner.png) left center no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+
+  #lecture {
+    background: url(../assets/press-conference.png) left center no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+
+  #eat {
+    background: url(../assets/eating.png) left center no-repeat;
+    background-origin: content-box;
+    background-size: 3rem;
+  }
+
+  #programs-icon {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  button {
+    background-color: $secondary-color;
+    height: 5rem;
+    width: 20rem;
+    align-self: center;
+    border: none;
+    color: #fff;
+    margin-top: 2.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.logo-section {
+  padding: 3rem 2rem;
+
+  h3 {
+    padding: 0;
+  }
+
+  div.outer {
+    border: $alternative-color 1px solid;
+    height: 10rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+
+    div.inner {
+      width: 14.5rem;
+      background: url(../assets/svg-clip.png) left center no-repeat;
+      background-size: 3rem;
+      height: 4rem;
+      display: flex;
+      flex-direction: column;
+      padding-left: 3rem;
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+.past-events {
+  padding: 3rem 3rem;
+  border-top: $alternative-color 1px solid;
+
+  .bg-image {
+    background: url(../assets/solidwastec.jpg) center center no-repeat;
+    background-size: cover;
+    height: 15rem;
+  }
+
+  #bangalore {
+    background: url(../assets/bang.jpeg) center center no-repeat;
+    background-size: cover;
+    height: 15rem;
+  }
+}
+
+.partners {
+  background-color: $primary-color;
+  padding: 2.5rem 0;
+
+  h3 {
+    color: #fff;
+  }
+}
+
+footer {
+  display: flex;
+  height: 7rem;
+  align-items: center;
+
+  div.f-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 3rem;
+    font-weight: 100;
+    font-family: $secondary-font;
+    background: url(../assets/svg-clip.png) 1rem center no-repeat;
+    background-size: 2rem;
+    height: 4rem;
+  }
+}
+
+// here is the desktop styling
+@media (min-width: 992px) {
+  nav ul li a {
+    color: #272a31;
+    font-size: 1.3rem;
+  }
+
+  header {
+    background: #fff;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+    }
+
+    footer div {
+      text-align: left;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      padding: 0;
+
+      #menu-icon {
+        display: none;
+      }
+
+      div {
+        display: flex;
+        height: 100%;
+        justify-content: end;
+      }
+
+      ul {
+        margin-top: 0;
+        margin-left: 20rem;
+        height: auto;
+        display: inline-flex;
+        align-items: center;
+
+        li {
+          display: inline;
+          margin-bottom: 0;
+          margin-left: 4rem;
+        }
+      }
+
+      button {
+        margin-top: 0;
+        height: 60%;
+        align-self: center;
+        background-color: #fff;
+        margin-left: 7rem;
+      }
+    }
+
+    div.social {
+      background-color: #272a31e1;
+      color: #fff;
+      height: 3rem;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 0 10rem;
+
+      ul {
+        list-style: none;
+        font-size: 1.2rem;
+
+        li {
+          display: inline;
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+
+        button {
+          background-color: inherit;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    div.nav-section {
+      padding: 0 10rem;
+      height: 5.5rem;
+    }
+
+    div.logo {
+      position: static;
+      display: flex;
+      padding-top: 0;
+      align-items: center;
+      width: auto;
+
+      a {
+        background: url(../assets/svg-clip.png) left center no-repeat;
+        background-size: 2.5rem;
+        width: 10rem;
+        padding-left: 2.5rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-decoration: none;
+        line-height: 1.5rem;
+        color: black;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h3::after {
+    width: 3rem;
+    left: 48.7%;
+  }
+
+  section.timeline {
+    height: calc(100vh - 6.5rem);
+    padding: 0 10rem;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      width: 70%;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-top: 0.4rem;
+    }
+
+    p {
+      width: 55%;
+      font-size: 1.5rem;
+    }
+
+    div span {
+      font-size: 2rem;
+    }
+  }
+
+  #about-timeline {
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      width: 70%;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
+
+    div p {
+      width: auto;
+    }
+  }
+
+  #speakers li {
+    padding-right: 2rem;
+  }
+
+  .partners > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .past-events div {
+    display: flex;
+    justify-content: center;
+
+    div {
+      width: 25rem;
+      margin: 0 0.5rem;
+      background-size: cover;
+
+      div {
+        margin: 0;
+      }
+    }
+  }
+
+  #main-program {
+    display: flex;
+    padding-bottom: 5rem;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+
+      li {
+        margin: 0 0.3rem;
+
+        p {
+          padding: 0;
+          text-align: center;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+
+    .box {
+      flex-direction: column;
+      height: 15rem;
+      width: 15rem;
+      padding: 0 1rem;
+      background-position: center top;
+
+      h4 {
+        width: auto;
+        margin: 0;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+    }
+
+    #award {
+      background: url(../assets/winner.png) center top no-repeat;
+      background-origin: content-box;
+      background-size: 3rem;
+    }
+
+    #lecture {
+      background: url(../assets/press-conference.png) center top no-repeat;
+      background-origin: content-box;
+      background-size: 3rem;
+    }
+
+    #eat {
+      background: url(../assets/eating.png) center top no-repeat;
+      background-origin: content-box;
+      background-size: 3rem;
+    }
+
+    button {
+      display: none;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  #speakers {
+    ul {
+      padding: 0 10rem;
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.outer {
+      width: 25rem;
+    }
+  }
+
+  footer {
+    height: 12rem;
+    padding: 0 10rem;
+
+    div.f-logo {
+      text-align: left;
+    }
+  }
+
+  .past-events {
+    padding-bottom: 6.5rem;
+  }
+}
