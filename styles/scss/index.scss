@@ -53,6 +53,10 @@ header {
       width: 100%;
     }
   }
+
+  div.social {
+    display: none;
+  }
 }
 
 header.mobile {
@@ -516,9 +520,89 @@ footer {
 
   header {
     background: #fff;
-    height: 6.5rem;
-    padding: 0 10rem;
+    height: auto;
+    padding: 0;
     display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+    }
+
+    footer div {
+      text-align: left;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      padding: 0;
+
+      #menu-icon {
+        display: none;
+      }
+
+      div {
+        display: flex;
+        height: 100%;
+        justify-content: end;
+      }
+
+      ul {
+        margin-top: 0;
+        margin-left: 20rem;
+        height: auto;
+        display: inline-flex;
+        align-items: center;
+
+        li {
+          display: inline;
+          margin-bottom: 0;
+          margin-left: 4rem;
+        }
+      }
+
+      button {
+        margin-top: 0;
+        height: 60%;
+        align-self: center;
+        background-color: #fff;
+        margin-left: 7rem;
+      }
+    }
+
+    div.social {
+      background-color: #272a31e1;
+      color: #fff;
+      height: 3rem;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 0 10rem;
+
+      ul {
+        list-style: none;
+        font-size: 1.2rem;
+
+        li {
+          display: inline;
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+
+        button {
+          background-color: inherit;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    div.nav-section {
+      padding: 0 10rem;
+      height: 5.5rem;
+    }
 
     div.logo {
       position: static;
@@ -538,41 +622,6 @@ footer {
         line-height: 1.5rem;
         color: black;
       }
-    }
-  }
-
-  nav {
-    padding: 0;
-
-    #menu-icon {
-      display: none;
-    }
-
-    div {
-      display: flex;
-      height: 100%;
-    }
-
-    ul {
-      margin-top: 0;
-      margin-left: 20rem;
-      height: auto;
-      display: inline-flex;
-      align-items: center;
-
-      li {
-        display: inline;
-        margin-bottom: 0;
-        margin-left: 4rem;
-      }
-    }
-
-    button {
-      margin-top: 0;
-      height: 60%;
-      align-self: center;
-      background-color: #fff;
-      margin-left: 7rem;
     }
   }
 
@@ -635,11 +684,6 @@ footer {
 
   #speakers li {
     padding-right: 2rem;
-  }
-
-  footer div {
-    text-align: left;
-    font-size: 1.2rem;
   }
 
   .partners > div {

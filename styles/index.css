@@ -48,6 +48,10 @@ header div.logo a {
   width: 100%;
 }
 
+header div.social {
+  display: none;
+}
+
 header.mobile {
   background: url(../assets/confetti-doodles-2.svg) center no-repeat;
   height: 100vh;
@@ -504,9 +508,89 @@ footer div.f-logo {
 
   header {
     background: #fff;
-    height: 6.5rem;
-    padding: 0 10rem;
+    height: auto;
+    padding: 0;
     display: flex;
+    flex-direction: column;
+  }
+
+  header div {
+    display: flex;
+  }
+
+  header footer div {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  header nav {
+    padding: 0;
+  }
+
+  header nav #menu-icon {
+    display: none;
+  }
+
+  header nav div {
+    display: flex;
+    height: 100%;
+    justify-content: end;
+  }
+
+  header nav ul {
+    margin-top: 0;
+    margin-left: 20rem;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  header nav ul li {
+    display: inline;
+    margin-bottom: 0;
+    margin-left: 4rem;
+  }
+
+  header nav button {
+    margin-top: 0;
+    height: 60%;
+    align-self: center;
+    background-color: #fff;
+    margin-left: 7rem;
+  }
+
+  header div.social {
+    background-color: #272a31e1;
+    color: #fff;
+    height: 3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10rem;
+  }
+
+  header div.social ul {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+
+  header div.social ul li {
+    display: inline;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  header div.social ul button {
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  header div.nav-section {
+    padding: 0 10rem;
+    height: 5.5rem;
   }
 
   header div.logo {
@@ -527,41 +611,6 @@ footer div.f-logo {
     text-decoration: none;
     line-height: 1.5rem;
     color: black;
-  }
-
-  nav {
-    padding: 0;
-  }
-
-  nav #menu-icon {
-    display: none;
-  }
-
-  nav div {
-    display: flex;
-    height: 100%;
-  }
-
-  nav ul {
-    margin-top: 0;
-    margin-left: 20rem;
-    height: auto;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  nav ul li {
-    display: inline;
-    margin-bottom: 0;
-    margin-left: 4rem;
-  }
-
-  nav button {
-    margin-top: 0;
-    height: 60%;
-    align-self: center;
-    background-color: #fff;
-    margin-left: 7rem;
   }
 
   h3 {
@@ -623,11 +672,6 @@ footer div.f-logo {
 
   #speakers li {
     padding-right: 2rem;
-  }
-
-  footer div {
-    text-align: left;
-    font-size: 1.2rem;
   }
 
   .partners > div {
