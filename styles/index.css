@@ -26,12 +26,14 @@ header {
   background: url(../assets/confetti-doodles-2.svg) center no-repeat;
   position: relative;
 }
+
 header div.logo {
   position: absolute;
   right: 1.5rem;
   width: 11.5rem;
   padding-top: 1.3rem;
 }
+
 header div.logo a {
   background: url(../assets/svg-clip.png) left center no-repeat;
   background-size: auto;
@@ -59,13 +61,16 @@ nav {
   width: 100%;
   height: 100%;
 }
+
 nav #menu-icon {
   font-size: 3rem;
   color: #272a31;
 }
+
 nav div {
   display: none;
 }
+
 nav button {
   margin-top: 2rem;
   padding: 0.5rem 1rem;
@@ -74,6 +79,7 @@ nav button {
   color: #ec5242;
   font-weight: 900;
 }
+
 nav div.show {
   display: flex;
   flex-direction: column;
@@ -82,6 +88,7 @@ nav div.show {
   width: 100%;
   height: 100%;
 }
+
 nav ul {
   margin: 0;
   margin-top: 6rem;
@@ -89,6 +96,7 @@ nav ul {
   list-style: none;
   font-size: 1.7rem;
 }
+
 nav ul li {
   text-align: center;
   margin-bottom: 2rem;
@@ -109,6 +117,7 @@ footer div {
   background: url(../assets/confetti-doodles-2.svg) center center no-repeat;
   background-size: cover;
 }
+
 .timeline h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
@@ -117,6 +126,7 @@ footer div {
   line-height: 2.6rem;
   font-size: 2.3rem;
 }
+
 .timeline p {
   margin: 1rem 1rem;
   margin-top: 1.8rem;
@@ -125,13 +135,16 @@ footer div {
   border: #fff 4px solid;
   line-height: 1.7rem;
 }
+
 .timeline div {
   padding: 0 1.2rem;
 }
+
 .timeline div span {
   font-size: 1.1rem;
   margin-top: 0.5rem;
 }
+
 .timeline h2 {
   font-family: "COCOGOOSE", sans-serif;
   color: #272a31;
@@ -209,6 +222,7 @@ section ul {
 #speakers {
   padding: 3rem 1.5rem;
 }
+
 #speakers .speaker-image {
   width: 10rem;
   height: 10rem;
@@ -218,15 +232,18 @@ section ul {
   padding-top: 1.2rem;
   margin-right: 1.3rem;
 }
+
 #speakers .speaker-details {
   padding-top: 0.5rem;
 }
+
 #speakers li {
   display: flex;
   font-size: 1.2rem;
   color: #272a31;
   margin-bottom: 2rem;
 }
+
 #speakers p:first-of-type {
   color: #ec5242;
   font-size: 0.9rem;
@@ -234,6 +251,7 @@ section ul {
   margin-bottom: 1.7rem;
   position: relative;
 }
+
 #speakers p:first-of-type::after {
   content: "";
   position: absolute;
@@ -243,6 +261,7 @@ section ul {
   background-color: #d3d3d3;
   left: 0;
 }
+
 #speakers button {
   width: 100%;
   height: 3rem;
@@ -251,6 +270,7 @@ section ul {
   margin-top: 1rem;
   font-size: 1rem;
 }
+
 #speakers .fas {
   color: #ec5242;
   font-size: 1.3rem;
@@ -272,6 +292,23 @@ section ul {
   margin-top: 2rem;
 }
 
+.partners > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners > div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners > div div img {
+  margin: 1rem;
+}
+
 .past-events .bg-image div {
   display: flex;
   flex-direction: column;
@@ -283,6 +320,7 @@ section ul {
   background-color: #ec534298;
   z-index: 2;
 }
+
 .past-events .bg-image div h4 {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -292,6 +330,7 @@ section ul {
   text-align: center;
   font-size: 2.1rem;
 }
+
 #about-timeline div span {
   display: block;
   width: 100%;
@@ -308,18 +347,22 @@ section ul {
   display: flex;
   flex-direction: column;
 }
+
 #main-program ul {
   padding: 0 1.1rem;
   margin-top: 1.5rem;
 }
+
 #main-program a {
   display: none;
 }
+
 #main-program li {
   background-color: #d3d3d31e;
   margin-bottom: 0.5rem;
   padding: 1rem 0;
 }
+
 #main-program li h4 {
   display: flex;
   align-items: center;
@@ -327,6 +370,7 @@ section ul {
   font-size: 1.2rem;
   font-weight: 800;
 }
+
 #main-program div {
   height: auto;
   display: flex;
@@ -335,30 +379,36 @@ section ul {
   padding-left: 1.5rem;
   background-origin: content-box;
 }
+
 #main-program div h4 {
   width: 15rem;
   color: #ec5242;
   margin-left: 5rem;
 }
+
 #main-program div#award {
   background: url(../assets/winner.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
+
 #main-program div#lecture {
   background: url(../assets/press-conference.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
+
 #main-program div#eat {
   background: url(../assets/eating.png) left center no-repeat;
   background-origin: content-box;
   background-size: 3rem;
 }
+
 #main-program #programs-icon {
   color: #fff;
   font-size: 2rem;
 }
+
 #main-program button {
   background-color: #ec5242;
   height: 5rem;
@@ -374,9 +424,11 @@ section ul {
 .logo-section {
   padding: 3rem 2rem;
 }
+
 .logo-section h3 {
   padding: 0;
 }
+
 .logo-section div.outer {
   border: #d3d3d3 1px solid;
   height: 10rem;
@@ -388,6 +440,7 @@ section ul {
   font-size: 1.8rem;
   font-weight: 900;
 }
+
 .logo-section div.outer div.inner {
   width: 14.5rem;
   background: url(../assets/svg-clip.png) left center no-repeat;
@@ -403,11 +456,13 @@ section ul {
   padding: 3rem 3rem;
   border-top: #d3d3d3 1px solid;
 }
+
 .past-events .bg-image {
   background: url(../assets/solidwastec.jpg) center center no-repeat;
   background-size: cover;
   height: 15rem;
 }
+
 .past-events #bangalore {
   background: url(../assets/bang.jpeg) center center no-repeat;
   background-size: cover;
@@ -418,6 +473,7 @@ section ul {
   background-color: #272a31;
   padding: 2.5rem 0;
 }
+
 .partners h3 {
   color: #fff;
 }
@@ -427,6 +483,7 @@ footer {
   height: 7rem;
   align-items: center;
 }
+
 footer div.f-logo {
   display: flex;
   align-items: center;
@@ -451,6 +508,7 @@ footer div.f-logo {
     padding: 0 10rem;
     display: flex;
   }
+
   header div.logo {
     position: static;
     display: flex;
@@ -458,6 +516,7 @@ footer div.f-logo {
     align-items: center;
     width: auto;
   }
+
   header div.logo a {
     background: url(../assets/svg-clip.png) left center no-repeat;
     background-size: 2.5rem;
@@ -473,13 +532,16 @@ footer div.f-logo {
   nav {
     padding: 0;
   }
+
   nav #menu-icon {
     display: none;
   }
+
   nav div {
     display: flex;
     height: 100%;
   }
+
   nav ul {
     margin-top: 0;
     margin-left: 20rem;
@@ -487,11 +549,13 @@ footer div.f-logo {
     display: inline-flex;
     align-items: center;
   }
+
   nav ul li {
     display: inline;
     margin-bottom: 0;
     margin-left: 4rem;
   }
+
   nav button {
     margin-top: 0;
     height: 60%;
@@ -508,19 +572,23 @@ footer div.f-logo {
     height: calc(100vh - 6.5rem);
     padding: 0 10rem;
   }
+
   section.timeline h1 {
     font-size: 4rem;
     line-height: 4.5rem;
     width: 70%;
   }
+
   section.timeline h2 {
     font-size: 3rem;
     margin-top: 0.4rem;
   }
+
   section.timeline p {
     width: 55%;
     font-size: 1.5rem;
   }
+
   section.timeline div span {
     font-size: 2rem;
   }
@@ -528,18 +596,22 @@ footer div.f-logo {
   #about-timeline {
     align-items: center;
   }
+
   #about-timeline h1 {
     font-size: 3rem;
     line-height: 4.5rem;
     width: 70%;
   }
+
   #about-timeline h2 {
     font-size: 3rem;
   }
+
   #about-timeline p {
     margin: 2rem 0;
     font-size: 1.1rem;
   }
+
   #about-timeline div p {
     width: auto;
   }
@@ -553,15 +625,24 @@ footer div.f-logo {
     font-size: 1.2rem;
   }
 
+  .partners > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .past-events div {
     display: flex;
     justify-content: center;
   }
+
   .past-events div div {
     width: 25rem;
     margin: 0 0.5rem;
     background-size: cover;
   }
+
   .past-events div div div {
     margin: 0;
   }
@@ -570,20 +651,24 @@ footer div.f-logo {
     display: flex;
     padding-bottom: 5rem;
   }
+
   #main-program ul {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
     margin-top: 2rem;
   }
+
   #main-program ul li {
     margin: 0 0.3rem;
   }
+
   #main-program ul li p {
     padding: 0;
     text-align: center;
     margin-top: 0.8rem;
   }
+
   #main-program div {
     flex-direction: column;
     height: 15rem;
@@ -591,30 +676,36 @@ footer div.f-logo {
     padding: 0 1rem;
     background-position: center top;
   }
+
   #main-program div h4 {
     width: auto;
     margin: 0;
     justify-content: center;
     margin-top: 4rem;
   }
+
   #main-program div#award {
     background: url(../assets/winner.png) center top no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
+
   #main-program div#lecture {
     background: url(../assets/press-conference.png) center top no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
+
   #main-program div#eat {
     background: url(../assets/eating.png) center top no-repeat;
     background-origin: content-box;
     background-size: 3rem;
   }
+
   #main-program button {
     display: none;
   }
+
   #main-program a {
     display: block;
     text-align: center;
@@ -628,6 +719,7 @@ footer div.f-logo {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
   #speakers button {
     display: none;
   }
@@ -637,6 +729,7 @@ footer div.f-logo {
     flex-direction: column;
     align-items: center;
   }
+
   .logo-section div.outer {
     width: 25rem;
   }
@@ -645,6 +738,7 @@ footer div.f-logo {
     height: 12rem;
     padding: 0 10rem;
   }
+
   footer div.f-logo {
     text-align: left;
   }
